@@ -1,44 +1,158 @@
+/* General Body Styling */
 body {
-    background-color: #f9f9f9;
     font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
 }
 
-h1 {
+h1, h2, h3, h4, h5 {
+    font-family: 'Helvetica Neue', sans-serif;
     color: #333;
     font-weight: 700;
 }
 
-.nav-tabs .nav-link {
+h1 {
+    font-size: 2.5rem;
     color: #007bff;
 }
 
-.nav-tabs .nav-link.active {
-    background-color: #007bff;
-    color: white;
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 0.25rem;
 }
 
-.tab-content h3 {
-    font-weight: bold;
-    margin-top: 0;
+h3 {
+    font-size: 1.25rem;
+    color: #0056b3;
+}
+
+h4, h5 {
+    font-size: 1.15rem;
     color: #333;
 }
 
-.tab-content p, .tab-content ul {
-    font-size: 16px;
-    color: #555;
+/* Styling the Lead (Contact Information) */
+.lead {
+    font-size: 1.1rem;
+    color: #666;
 }
 
+/* Section Styling */
+section {
+    margin-bottom: 2rem;
+}
+
+.cv-section {
+    margin-bottom: 1.5rem;
+}
+
+/* Text Muted Styling */
+.text-muted {
+    color: #777 !important;
+}
+
+/* List Styling */
 ul {
-    padding-left: 20px;
+    padding-left: 1.5rem;
 }
 
 ul li {
-    list-style-type: disc;
+    list-style-type: none;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 0.5rem;
 }
 
-.tab-pane {
-    background: white;
-    padding: 20px;
+ul li:before {
+    content: "\f00c"; /* FontAwesome check icon */
+    font-family: 'FontAwesome';
+    position: absolute;
+    left: 0;
+    color: #007bff;
+}
+
+/* Skills Section */
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.skills-list strong {
+    color: #0056b3;
+}
+
+.badge {
+    font-size: 0.9rem;
+}
+
+/* Project Styling */
+.project-item {
+    padding: 1rem;
+    background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-item h3 {
+    font-size: 1.15rem;
+    color: #007bff;
+}
+
+.project-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Button and Link Styling */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 2rem;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    background-color: #333;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries for Mobile Optimization */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.15rem;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    ul li:before {
+        left: 10px;
+    }
 }

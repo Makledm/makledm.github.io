@@ -3,6 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f7f6;
     color: #333;
+    line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5 {
@@ -33,7 +34,7 @@ h4, h5 {
     color: #333;
 }
 
-/* Styling the Lead (Contact Information) */
+/* Lead Styling for Contact Information */
 .lead {
     font-size: 1.1rem;
     color: #666;
@@ -44,55 +45,17 @@ section {
     margin-bottom: 2rem;
 }
 
-.cv-section {
-    margin-bottom: 1.5rem;
-}
-
-/* Text Muted Styling */
-.text-muted {
-    color: #777 !important;
-}
-
-/* List Styling */
-ul {
+/* Bullet List Styling */
+ul.list-disc {
     padding-left: 1.5rem;
 }
 
-ul li {
-    list-style-type: none;
-    position: relative;
-    padding-left: 20px;
+ul.list-disc li {
+    list-style-type: disc;
     margin-bottom: 0.5rem;
 }
 
-ul li:before {
-    content: "\f00c"; /* FontAwesome check icon */
-    font-family: 'FontAwesome';
-    position: absolute;
-    left: 0;
-    color: #007bff;
-}
-
-/* Skills Section */
-.skills-list {
-    list-style: none;
-    padding: 0;
-}
-
-.skills-list li {
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-}
-
-.skills-list strong {
-    color: #0056b3;
-}
-
-.badge {
-    font-size: 0.9rem;
-}
-
-/* Project Styling */
+/* Project Item Styling */
 .project-item {
     padding: 1rem;
     background-color: #fff;
@@ -108,17 +71,6 @@ ul li:before {
 .project-item p {
     font-size: 1rem;
     color: #555;
-}
-
-/* Button and Link Styling */
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #0056b3;
-    text-decoration: underline;
 }
 
 /* Footer Styling */
@@ -150,9 +102,5 @@ footer p {
 
     .container {
         padding: 0 15px;
-    }
-
-    ul li:before {
-        left: 10px;
     }
 }

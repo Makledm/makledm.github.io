@@ -1,70 +1,136 @@
+ccs
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Font Settings */
 body {
-    background-color: #f9f9f9;
-    font-family: 'Arial', sans-serif;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+  line-height: 1.6;
 }
 
-h1 {
-    color: #333;
-    font-weight: 700;
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.nav-tabs .nav-link {
-    color: #007bff;
+/* Header */
+.header {
+  text-align: center;
+  border-bottom: 2px solid #e0e0e0;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
-.nav-tabs .nav-link.active {
-    background-color: #007bff;
-    color: white;
+.header h1 {
+  font-size: 36px;
+  color: #2c3e50;
 }
 
-.tab-content h3, h4 {
-    font-weight: bold;
-    margin-top: 0;
-    color: #333;
+.contact-info {
+  font-size: 16px;
+  color: #7f8c8d;
 }
 
-.tab-content p, .tab-content ul {
-    font-size: 16px;
-    color: #555;
+.contact-info a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Section Styles */
+.section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 28px;
+  color: #2980b9;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+}
+
+/* Job Experience */
+.job {
+  margin-bottom: 20px;
+}
+
+.job h3 {
+  font-size: 20px;
+  color: #2c3e50;
+}
+
+.job-dates {
+  font-size: 14px;
+  color: #7f8c8d;
 }
 
 ul {
-    padding-left: 20px;
+  list-style-type: none;
+  padding-left: 20px;
 }
 
-ul li {
-    list-style-type: disc;
+ul li::before {
+  content: "•";
+  color: #3498db;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
-.tab-pane {
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Education */
+.education-item h3 {
+  font-size: 20px;
+  color: #2c3e50;
 }
 
-/* CV Specific Styling */
-.cv-section {
-    margin-bottom: 20px;
+.edu-dates {
+  font-size: 14px;
+  color: #7f8c8d;
 }
 
-.cv-section h4 {
-    margin-bottom: 10px;
-    font-size: 18px;
-    color: #333;
-}
-
-.cv-section ul {
-    padding-left: 20px;
-    list-style-type: disc;
+/* Skills */
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
 }
 
 .skills-list li {
-    list-style-type: none;
+  background-color: #ecf0f1;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 16px;
 }
 
-.skills-list li::before {
-    content: '✔';
-    margin-right: 8px;
-    color: #007bff;
+/* Projects */
+.project-item {
+  margin-bottom: 20px;
+}
+
+.project-item h3 {
+  font-size: 20px;
+  color: #2c3e50;
+}
+
+footer {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+  color: #7f8c8d;
 }

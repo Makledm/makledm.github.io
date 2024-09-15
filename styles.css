@@ -17,7 +17,7 @@ h1 {
     color: white;
 }
 
-.tab-content h3 {
+.tab-content h3, h4 {
     font-weight: bold;
     margin-top: 0;
     color: #333;
@@ -41,4 +41,30 @@ ul li {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* CV Specific Styling */
+.cv-section {
+    margin-bottom: 20px;
+}
+
+.cv-section h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.cv-section ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.skills-list li {
+    list-style-type: none;
+}
+
+.skills-list li::before {
+    content: '✔';
+    margin-right: 8px;
+    color: #007bff;
 }

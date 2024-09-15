@@ -1,117 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>John Doe - Professional CV</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Personal Page</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  
-  <!-- Optional Bootstrap JavaScript for interactive components -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
-  <link rel="stylesheet" href="styles.css"> <!-- Link to your custom CSS -->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+    <div class="container">
+        <h1 class="text-center my-4">Welcome to My Personal Page</h1>
 
-  <div class="container my-5">
-    <header class="text-center mb-4">
-      <h1>John Doe</h1>
-      <p class="lead">Email: <a href="mailto:johndoe@example.com">johndoe@example.com</a> | Phone: +1234567890 | Location: New York, USA</p>
-    </header>
-
-    <!-- Summary Section -->
-    <section class="summary mb-4">
-      <h2 class="h4 text-primary">Summary</h2>
-      <p>Seasoned IT professional with 8+ years of experience in software development, specializing in full-stack development, cloud computing, and DevOps practices. Adept at leading cross-functional teams and delivering scalable solutions on time. Seeking a senior software engineer role at a leading tech company.</p>
-    </section>
-
-    <!-- Professional Experience Section -->
-    <section class="experience mb-4">
-      <h2 class="h4 text-primary">Professional Experience</h2>
-      
-      <!-- Job 1 -->
-      <div class="job mb-3">
-        <h3 class="h5">Senior Software Engineer - TechCorp</h3>
-        <p class="text-muted">Jan 2018 - Present</p>
-        <ul class="list-unstyled">
-          <li><i class="fas fa-check"></i> Led a team of 10 developers in designing and deploying a cloud-native application serving 1M+ users globally.</li>
-          <li><i class="fas fa-check"></i> Developed and maintained key microservices using Node.js and Python, reducing processing time by 20%.</li>
-          <li><i class="fas fa-check"></i> Implemented CI/CD pipelines with Jenkins and Docker, improving deployment efficiency by 40%.</li>
+        <!-- Navigation Tabs -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="personal-details-tab" data-toggle="tab" href="#personal-details" role="tab" aria-controls="personal-details" aria-selected="true">Personal Details</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="hobbies-tab" data-toggle="tab" href="#hobbies" role="tab" aria-controls="hobbies" aria-selected="false">Hobbies</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="cv-tab" data-toggle="tab" href="#cv" role="tab" aria-controls="cv" aria-selected="false">CV</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+            </li>
         </ul>
-      </div>
-      
-      <!-- Job 2 -->
-      <div class="job mb-3">
-        <h3 class="h5">Software Engineer - Innovatech</h3>
-        <p class="text-muted">Jul 2014 - Dec 2017</p>
-        <ul class="list-unstyled">
-          <li><i class="fas fa-check"></i> Developed enterprise-grade web applications using React and Node.js for high-profile clients.</li>
-          <li><i class="fas fa-check"></i> Integrated RESTful APIs and optimized database queries to enhance application performance by 30%.</li>
-          <li><i class="fas fa-check"></i> Worked closely with clients to gather requirements and provide technical solutions.</li>
-        </ul>
-      </div>
-    </section>
 
-    <!-- Education Section -->
-    <section class="education mb-4">
-      <h2 class="h4 text-primary">Education</h2>
-      <div class="education-item mb-3">
-        <h3 class="h5">Master of Science in Computer Science - ABC University</h3>
-        <p class="text-muted">2012 - 2014</p>
-      </div>
-      <div class="education-item mb-3">
-        <h3 class="h5">Bachelor of Science in Information Technology - XYZ University</h3>
-        <p class="text-muted">2008 - 2012</p>
-      </div>
-    </section>
+        <!-- Tab Content -->
+        <div class="tab-content my-4" id="myTabContent">
+            <!-- Personal Details -->
+            <div class="tab-pane fade show active" id="personal-details" role="tabpanel" aria-labelledby="personal-details-tab">
+                <h3>Personal Details</h3>
+                <p><strong>Name:</strong> John Doe</p>
+                <p><strong>Age:</strong> 30</p>
+                <p><strong>Location:</strong> New York, USA</p>
+            </div>
 
-    <!-- Skills Section -->
-    <section class="skills mb-4">
-      <h2 class="h4 text-primary">Skills</h2>
-      <ul class="list-inline">
-        <li class="list-inline-item badge badge-secondary p-2 m-1">JavaScript</li>
-        <li class="list-inline-item badge badge-secondary p-2 m-1">React.js</li>
-        <li class="list-inline-item badge badge-secondary p-2 m-1">Node.js</li>
-        <li class="list-inline-item badge badge-secondary p-2 m-1">Docker</li>
-        <li class="list-inline-item badge badge-secondary p-2 m-1">AWS</li>
-        <li class="list-inline-item badge badge-secondary p-2 m-1">Git</li>
-        <li class="list-inline-item badge badge-secondary p-2 m-1">CI/CD</li>
-      </ul>
-    </section>
+            <!-- Hobbies -->
+            <div class="tab-pane fade" id="hobbies" role="tabpanel" aria-labelledby="hobbies-tab">
+                <h3>Hobbies</h3>
+                <ul>
+                    <li>Photography</li>
+                    <li>Traveling</li>
+                    <li>Reading</li>
+                    <li>Coding</li>
+                </ul>
+            </div>
 
-    <!-- Certifications Section -->
-    <section class="certifications mb-4">
-      <h2 class="h4 text-primary">Certifications</h2>
-      <ul>
-        <li>AWS Certified Solutions Architect – Associate (2020)</li>
-        <li>Certified ScrumMaster (CSM) (2019)</li>
-        <li>Microsoft Certified: Azure Developer Associate (2018)</li>
-      </ul>
-    </section>
+            <!-- CV Section -->
+            <div class="tab-pane fade" id="cv" role="tabpanel" aria-labelledby="cv-tab">
+                <h3>CV</h3>
+                
+                <!-- Education Section -->
+                <div class="cv-section">
+                    <h4>Education</h4>
+                    <ul>
+                        <li><strong>Bachelor of Science in Computer Science</strong> - XYZ University (2010 - 2014)</li>
+                        <li><strong>Master of Science in Information Technology</strong> - ABC University (2014 - 2016)</li>
+                    </ul>
+                </div>
 
-    <!-- Projects Section -->
-    <section class="projects mb-4">
-      <h2 class="h4 text-primary">Projects</h2>
-      <div class="project-item mb-3">
-        <h3 class="h5">E-commerce Platform</h3>
-        <p>Developed a scalable e-commerce platform for a major retail client using React.js and Node.js. Integrated third-party payment gateways and implemented user authentication and authorization features. This project was deployed on AWS and serves over 500,000 users annually.</p>
-      </div>
-      <div class="project-item mb-3">
-        <h3 class="h5">Internal CRM Tool</h3>
-        <p>Built a custom CRM tool for a mid-sized company, improving their sales tracking and customer management processes. The tool was built using Angular, Node.js, and MongoDB, and increased their sales efficiency by 25%.</p>
-      </div>
-    </section>
+                <!-- Work Experience Section -->
+                <div class="cv-section">
+                    <h4>Work Experience</h4>
+                    <ul>
+                        <li>
+                            <strong>Software Engineer</strong> at TechCorp (2016 - Present)
+                            <ul>
+                                <li>Developed scalable web applications used by over 1 million users.</li>
+                                <li>Led a team of 5 developers in creating a custom e-commerce platform.</li>
+                                <li>Implemented automated testing processes, reducing bugs by 30%.</li>
+                                <li>Worked closely with stakeholders to gather requirements and deliver solutions on time.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>IT Consultant</strong> at ConsultCo (2013 - 2016)
+                            <ul>
+                                <li>Provided IT consultation services to small and medium-sized enterprises.</li>
+                                <li>Developed custom software solutions for over 10 clients, resulting in increased efficiency.</li>
+                                <li>Worked with clients to improve their digital infrastructure, resulting in a 20% increase in productivity.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
 
-    <!-- Footer -->
-    <footer class="text-center">
-      <p>© 2024 John Doe</p>
-    </footer>
-  </div>
+                <!-- Skills Section -->
+                <div class="cv-section">
+                    <h4>Skills</h4>
+                    <ul class="skills-list">
+                        <li><strong>Programming Languages:</strong> JavaScript, Python, Java, C#</li>
+                        <li><strong>Web Technologies:</strong> HTML5, CSS3, Bootstrap, React, Angular</li>
+                        <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB</li>
+                        <li><strong>Version Control:</strong> Git, GitHub, Bitbucket</li>
+                        <li><strong>Project Management:</strong> Agile, Scrum</li>
+                    </ul>
+                </div>
 
+                <!-- Certifications Section -->
+                <div class="cv-section">
+                    <h4>Certifications</h4>
+                    <ul>
+                        <li>Certified Scrum Master (CSM)</li>
+                        <li>AWS Certified Solutions Architect – Associate</li>
+                        <li>Microsoft Certified: Azure Developer Associate</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <h3>Contact</h3>
+                <p><strong>Email:</strong> john.doe@example.com</p>
+                <p><strong>Phone:</strong> +123-456-7890</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
